@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "stack.h"
+#include "Dystack.h"
 #include <stdlib.h>
 int main(){
 	int choice;
 	
 	while(1){
-	printf("\nEnter valid choice for ADT for stack :\n1.creating a stack .\n2.pushing element to a stack. \n3.poping element out of stack .\n4.check whether the stack is empty\n5.check whether the stack is full.\n");
+	printf("\nEnter valid choice for ADT for stack :\n1.creating a stack .\n2.pushing element to a stack. \n3.poping element out of stack .\n4.check whether the stack is empty\n5.check whether the stack is full.\n6.increase the size of stack");
 	scanf("%d",&choice);
 	switch(choice){
 		case 1:
@@ -37,6 +37,8 @@ int main(){
 				printf("stack is not full");
 			}
 			break;
+		case 6:
+			
 		default:
 			printf("terminal is exiting.... ");
 			exit(0);
